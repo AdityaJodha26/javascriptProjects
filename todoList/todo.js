@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded" , ()=>{
 
     let tasks ; 
     try{
-        JSON.parse(localStorage.getItem("tasks"))|| [] ; 
+        tasks = JSON.parse(localStorage.getItem("tasks"))|| [] ; 
     }
     catch{
         tasks=[] ;
